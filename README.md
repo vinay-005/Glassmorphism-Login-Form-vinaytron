@@ -23,9 +23,8 @@ A modern, premium **Login Form UI** built with HTML & CSS, featuring glassmorphi
 login-form/
 │── index.html
 │── style1.css
-│── logos/
-│   ├── google.png
-│   └── apple.png
+│── google.png
+│── apple.png
 ```
 
 ---
