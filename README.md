@@ -1,8 +1,6 @@
-# Glassmorphism-Login-Form-vinaytron
-A modern glassmorphism login form built with HTML &amp; CSS, featuring animated gradients, floating labels, and clean UI with subtle personal branding (vinaytron).
 #  Glassmorphism Login Form — vinaytron
 
-A modern, premium **Login Form UI** built with HTML & CSS, featuring glassmorphism design, smooth animations, and subtle personal branding.
+A modern, premium **Login Form UI** built with HTML & CSS, featuring glassmorphism design, smooth animations, and subtle personal (vinaytron).
 
 ---
 
