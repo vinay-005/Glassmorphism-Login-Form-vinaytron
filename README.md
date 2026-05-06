@@ -17,12 +17,6 @@ A modern, premium **Login Form UI** built with HTML & CSS, featuring glassmorphi
 
 ---
 
-## 📸 Preview
-
-> Add a screenshot here (recommended for better GitHub impact)
-
----
-
 ## 📂 Project Structure
 
 ```id="0m4vne"
