@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* animated premium gradient */
+    background: linear-gradient(-45deg, #e798e8, #c3c8ff, #f5d0ff);
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glass Card */
+.login_form {
+    width: 100%;
+    max-width: 420px;
+    padding: 45px 35px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Social buttons */
+.login_option {
+    display: flex;
+    gap: 10px;
+}
+
+.option a {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255,255,255,0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #111;
+
+    transition: 0.2s ease;
+}
+
+.option a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.option img {
+    width: 20px;
+}
+
+/* Separator */
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.separator span {
+    background: transparent;
+    padding: 0 10px;
+}
+
+.separator::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.2);
+    top: 50%;
+    left: 0;
+    z-index: -1;
+}
+
+/* Floating Inputs */
+.input_box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input_box input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+
+    background: rgba(255,255,255,0.3);
+    border-radius: 8px;
+}
+
+.input_box label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0,0,0,0.6);
+    transition: 0.3s ease;
+}
+
+.input_box input:focus + label,
+.input_box input:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 12px;
+    color: #626cd6;
+}
+
+/* Extra links */
+.extra {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.extra a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #626cd6;
+}
+
+/* Button */
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #626cd6, #8f9bff);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Signup */
+.sign_up {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sign_up a {
+    color: #626cd6;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Sidebar branding */
+.sidebar {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    z-index: 2;
+}
+
+/* Main name */
+.sidebar h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+}
+
+/* Last name */
+.sidebar span {
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+/* vertical line for premium feel */
+.sidebar::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(#626cd6, transparent);
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
